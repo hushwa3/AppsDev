@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apps Dev Activity 1</title>  
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/appsdevstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="container">
+        <img src="assets/LenovoLegion.png" alt="Logo" class="Logo">
+    </div>
+
+    <form id="form">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+        <label for="descrip">Which option best describes you?</label><br>
+        <select name="descrip" id="descrip" required>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Staff">Staff</option>
+            <option value="Human">Human</option>
+        </select><br><br>
+
+        <label for="recommend">Would you recommend Lenovo Legion to a friend?</label><br>
+        <input type="radio" id="recommendYes" name="recommend" value="Yes" required>Yes<br>
+        <input type="radio" id="recommendNo" name="recommend" value="No" required>No<br>
+        <input type="radio" id="recommendMaybe" name="recommend" value="Maybe" required>Maybe<br><br>
+
+        <label for="check">Languages and Frameworks known (Check all that apply)</label><br>
+        <input type="checkbox" name="languages" value="C">C<br>
+        <input type="checkbox" name="languages" value="C++">C++<br>
+        <input type="checkbox" name="languages" value="C#">C#<br>
+        <input type="checkbox" name="languages" value="Java">Java<br>
+        <input type="checkbox" name="languages" value="Python">Python<br>
+        <input type="checkbox" name="languages" value="Javascript">Javascript<br>
+        <input type="checkbox" name="languages" value="React">React<br>
+        <input type="checkbox" name="languages" value="Angular">Angular<br>
+        <input type="checkbox" name="languages" value="Django">Django<br>
+        <input type="checkbox" name="languages" value="Spring">Spring<br><br>
+
+        <label for="comments">Any comments or suggestions</label><br>
+        <textarea id="comments" name="comments" rows="3" cols="60"></textarea><br><br>
+        <input type="submit" value="Submit" id="Submit" class="btn" onclick="preventDefault()" onclick="openPopup()" >
+        
+        <div class="popup" id="popup">
+            <img src="assets/check.png" alt="error404">
+            <h2>SUCCESS!</h2>
+            <p>Your details have been submitted. Arigato!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </form>
+
+    <p class="output" id="out"></p>
+    <script src="assets/func.js"></script>
+</body>
+</html>

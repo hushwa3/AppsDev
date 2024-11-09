@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #789DBC;
+}
+.screen {
+    background-color: #A4BED5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#exam-screen, #results-screen {
+    display: none;
+}
+
+#welcome-screen, #results-screen {
+    text-align: center;
+}
+
+.question-block {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    position: relative;
+}
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: #e8e8e8;
+}
+.result-indicator {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
+.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+.incorrect {
+    background-color: #ff4444;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+button:disabled {
+    background-color: #f2f2f2bb;
+    cursor: not-allowed;
+}
+.check-btn {
+    background-color: #2196F3;
+}
+.check-btn:hover:not(:disabled) {
+    background-color: #1976D2;
+}
+.next-btn {
+    background-color: #4CAF50;
+}
+.next-btn:hover:not(:disabled) {
+    background-color: #45a049;
+}
+.timer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.buttons-container {
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) { 
+    .timer { 
+        top: 10px; 
+        right: 10px; 
+        padding: 5px 10px; 
+        font-size: 14px; 
+        position: absolute;
+   } 
+    .buttons-container { 
+        margin-top: 10px; 
+        position: absolute;
+    
+   } 
+}

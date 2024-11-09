@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Questions</title>
+    <link rel="stylesheet" href="assets/exam.css">
+</head>
+<body>
+    <body>
+        <div id="welcome-screen" class="screen">
+            <h1>Welcome to my Multiple Choice Exam</h1>
+            <div class="instructions">
+                <h2>Instructions:</h2>
+                <p>1. Two random questions will be shown at a time.</p>
+                <p>2. Each question has four choices, pick only one answer per question.</p>
+                <p>3. You must answer both questions before checking.</p>
+                <p>4. Incorrect questions will be repeated until answered correctly.</p>
+                <p>5. The exam ends when all questions are answered correctly.</p>
+                <p>6. Your total time will be shown at the end.</p>
+                <p>Goodluck! You got this in the bag G!</p>
+            </div>
+            <button onclick="startExam()" class="next-btn">Start Exam</button>
+        </div>
+    
+        <div id="exam-screen" class="screen">
+            <div id="timer" class="timer">00:00</div>
+            <div id="questions-container"></div>
+            <div class="buttons-container">
+                <button onclick="checkAnswers()" id="check-button" class="check-btn" disabled>Check Answers</button>
+                <button onclick="nextQuestions()" id="next-button" class="next-btn" disabled>Next Questions</button>
+            </div>
+        </div>
+    
+        <div id="results-screen" class="screen">
+            <h1>Congratulations!</h1>
+            <h2>You've answered all questions correctly!</h2>
+            <p>Time taken: <span id="time-taken">0:00</span></p>
+            <button onclick="restartExam()" class="next-btn">Take Again</button>
+        </div>
+        
+    <script src="assets/exam.js"></script>
+</body>
+</html>

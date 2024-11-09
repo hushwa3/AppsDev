@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apps Dev Activity 1</title>  
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/appsdevstyle.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="container">
+        <img src="assets/LenovoLegion.png" alt="Logo" class="Logo">
+    </div>
+
+    <form action="" id="form">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+        <label for="descrip">Which option best describes you?</label><br>
+        <select name="descrip" id="descrip" required>
+            <option value="stud">Student</option>
+            <option value="teach">Teacher</option>
+            <option value="fct">Faculty</option>
+            <option value="stf">Staff</option>
+            <option value="person">Human</option>
+        </select><br><br>
+
+        <label for="recommend">Would you recommend Lenovo Legion to a friend?</label><br>
+        <input type="radio" id="recommend" name="option" required>Yes<br>
+        <input type="radio" id="recommend" name="option" required>No<br>
+        <input type="radio" id="recommend" name="option" required>Maybe<br><br>
+
+        <label for="check">Languages and Frameworks known (Check all that apply)</label><br>
+        <input type="checkbox" name="C" id="check">C<br>
+        <input type="checkbox" name="C++" id="check">C++<br>
+        <input type="checkbox" name="C#" id="check">C#<br>
+        <input type="checkbox" name="Java" id="check">Java<br>
+        <input type="checkbox" name="Python" id="check">Python<br>
+        <input type="checkbox" name="Javascript" id="check">Javascript<br>
+        <input type="checkbox" name="React" id="check">React<br>
+        <input type="checkbox" name="Angular" id="check">Angular<br>
+        <input type="checkbox" name="Django" id="check">Django<br>
+        <input type="checkbox" name="Spring" id="check">Spring<br><br>
+
+        <label for="comments">Any comments or suggestions</label><br>
+        <textarea id="comments" name="comments" rows="3" cols="60"></textarea><br><br>
+        <input type="submit" value="Submit" id="Submit">
+    </form>
+
+    <p class="output" id="out"></p>
+    
+    <p id="success-message">SUCCESS</p>
+<script>
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault(); //di mo reload ang page
+    document.getElementById('success-message').style.display = 'block';
+});</script>
+
+</body>
+</html>

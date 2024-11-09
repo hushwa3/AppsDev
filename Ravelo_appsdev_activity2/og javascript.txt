@@ -1,0 +1,13 @@
+const nameField = document.getElementById('fname');
+const emailField = document.getElementById('email');
+const ageField = document.getElementById('age')
+const desc = document.getElementById('descrip')
+const output1 = document.getElementById('out');
+const btn = document.getElementById('Submit')
+
+
+function acq() {
+    output1.innerHTML = nameField.value;
+}
+
+btn.addEventListener('click', acq);
