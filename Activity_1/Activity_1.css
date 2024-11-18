@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+    min-height: 850px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+.random-div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
